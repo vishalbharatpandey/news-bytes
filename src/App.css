@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+}
+.text-center{
+  border: 1px solid black;
+}
+.headerMain{
+  display: flex;
+  flex-direction: row-reverse;
+}

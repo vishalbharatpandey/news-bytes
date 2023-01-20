@@ -1,0 +1,144 @@
+.header {
+    flex-direction: column;
+    height: 20vh;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.headerItems {
+    background-color: rgba(100, 100, 100, 0.40);
+    border-radius: 10px;
+}
+
+.appName {
+    font-size: 2rem;
+    color: black;
+    font-family: serif;
+    font-weight: 600;
+}
+
+b {
+    background-color: red;
+    font-weight: 900;
+    font-size: 3rem;
+    color: white;
+}
+.headerItems div p{
+    animation: mymove 0.5s infinite;
+}
+@keyframes mymove {
+    50% {transform: rotate(10deg);}
+  }
+
+.menu {
+    padding-bottom: 30px;
+    min-height: 70px;
+    background-color: rgba(100, 100, 100, 0.40);
+    box-shadow: 3px 3px 10px;
+    border: 0.5 px hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap;
+    flex-direction: row; */
+}
+
+.hamburger {
+    color: black !important;
+}
+
+.secondaryMenu {
+    display: block;
+    margin-top: 1px;
+    padding-bottom: 30px;
+    height: 40px;
+    /* background-color: #0049b7; */
+    background-color: rgba(100, 100, 100, 0.40);
+    box-shadow: 3px 3px 10px;
+    border: 0.5 px hidden;
+    border-radius: 10px;
+    padding-left: 25px;
+}
+.menuItems{
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+}
+.menuItemsSecondary{
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+}
+.menuParts{
+    width: 33.33%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menuItems div {
+    font-weight: 500;
+}
+
+/* .menuItems div:first-child {
+    padding: 0%;
+} */
+
+.menuItems .menuParts div:hover {
+    transform: scale(1.05);
+    color: red;
+}
+
+.search {
+    height: 25px;
+    width: 25px;
+    padding-top: 5px;
+    margin-left: 5px;
+}
+
+.filter {
+    height: 28px;
+    width: 28px;
+    padding-top: 5px;
+    margin-left: 5px;
+}
+
+#outlined-basic {
+    background-color: white !important;
+}
+
+.textAndSearch {
+    /* margin-left: 30vw; */
+    position:absolute;
+    right: 20px;
+}
+.marqueeItem{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.menuItems {
+    cursor: pointer;
+}
+@media (max-width:900px) {
+    .menuParts{
+        flex-direction: column;
+    }
+    body{
+        font-size: 0.7rem;
+    }
+    .menuItems div,.textAndSearch div,.menuItemsSecondary div{
+        font-size: 0.7rem;
+    }
+    
+}
+@media (max-width:700px) {
+    .textAndSearch{
+        flex-direction: column;
+    }
+}
+@media (max-width:700px) {
+    .marqueeItem{
+        font-size: 10px;
+    }
+}
